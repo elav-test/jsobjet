@@ -7,14 +7,19 @@
   </head>
   <body>
 <div>
-    
-  		<input id="nom">
-      <imput id="prenom">
-      <imput id="telephone">
 
-  		<button id ="ajouter" onclick="ajouterPrenom()">Ajouter Prénom </button>
-  		<button id ="supprimer" onclick="supprimerPrenom()">supprimer Prénom </button>
+  <ul id="liste"></ul>
 
+  		<input id="nom"   type="text" placeholder="nom">
+      <input id="prenom" type="text" placeholder="prenom">
+      <input id="telephone" type="text" placeholder="numero">
+
+
+  		<button id ="ajouter" onclick="ajouterContact()">Ajouter</button>
+
+      <input id="maRecherche" type="search" name="q" placeholder="Rechercher">
+	    <button id= "recherche" onclick="recherche()"> Recherche </button>
+      <div id="resultatRecherche"></div>
   	</div>
 
   <script type="text/javascript" src="javascript.js"></script>
